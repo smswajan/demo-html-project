@@ -1,0 +1,49 @@
+/* universal */
+* {
+    box-sizing: border-box; /*this fix the padding issue compared to width */
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+}
+h3 {
+    /* text-align: center; */ /*it's not necessary also. it has been set by the box */
+    font-family: "Roboto", sans-serif;
+    line-height: 40px;
+}
+p {
+    /* margin-bottom: 100px; */ /*this type of spacing can be set by the box padding. that's a better practice */
+    font-family: "Roboto", sans-serif;
+}
+
+/* as every box will have the same properties, I'm using a common class "box" */
+.box {
+    width: 29%;
+    float: left;
+    margin: 2%;
+    background-color: #fff; /* this will bring the white box under the image */
+    text-align: center; /* this will bring the box texts center */
+    padding-bottom: 32px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.18);
+}
+.box img {
+    width: 100%; /* so that the image fits the box width*/
+}
+/* 
+.box4,
+.box5,
+.box6 {
+    width: 33%;
+    float: left;
+} */
